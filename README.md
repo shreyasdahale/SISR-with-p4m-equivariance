@@ -1,7 +1,3 @@
-Here’s the updated README with the PSNR score added:  
-
----
-
 # Exploring p4m Equivariance in Image Processing Models
 
 This repository contains the implementation of a study exploring the impact of **p4m equivariance** on convolutional neural networks (CNNs) for image processing tasks. Specifically, the tasks involve **image denoising** and **4x single image super-resolution (SISR)**. The project leverages the `e2cnn` library to incorporate group symmetry in CNNs and compares performance between a standard CNN and its p4m-equivariant variant.
