@@ -46,7 +46,7 @@ This repository contains the implementation of a study exploring the impact of *
 Install the required dependencies:
 
 ```bash
-pip install torch e2cnn numpy matplotlib
+pip install torch e2cnn numpy matplotlib cv2 PIL
 ```
 
 ---
