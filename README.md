@@ -96,12 +96,6 @@ Each notebook contains detailed explanations of the architecture, training proce
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 Feel free to suggest improvements or raise issues in the repository!
 
 --- 
