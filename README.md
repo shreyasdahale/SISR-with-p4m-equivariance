@@ -43,6 +43,8 @@ This repository contains the implementation of a study exploring the impact of *
   - e2cnn
   - NumPy
   - Matplotlib
+  - PIL
+  - cv2
 
 Install the required dependencies:
 
