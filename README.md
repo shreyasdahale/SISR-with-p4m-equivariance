@@ -1,3 +1,7 @@
+Here’s the updated README with the PSNR score added:  
+
+---
+
 # Exploring p4m Equivariance in Image Processing Models
 
 This repository contains the implementation of a study exploring the impact of **p4m equivariance** on convolutional neural networks (CNNs) for image processing tasks. Specifically, the tasks involve **image denoising** and **4x single image super-resolution (SISR)**. The project leverages the `e2cnn` library to incorporate group symmetry in CNNs and compares performance between a standard CNN and its p4m-equivariant variant.
@@ -16,7 +20,7 @@ This repository contains the implementation of a study exploring the impact of *
 - **Performance Comparison**:
   - **Baseline CNN (without p4m)**: 2,441,011 parameters.
   - **p4m-Equivariant CNN**: 1,878,515 parameters (~25% reduction).
-  - Models trained on the augmented dataset demonstrated improved output quality with p4m equivariance, particularly in texture and line retention.
+  - The **p4m-equivariant model achieved a PSNR score of approximately 36**, demonstrating superior image quality with enhanced texture and line preservation.
 
 ---
 
@@ -43,8 +47,8 @@ This repository contains the implementation of a study exploring the impact of *
   - e2cnn
   - NumPy
   - Matplotlib
-  - PIL
   - cv2
+  - PIL
 
 Install the required dependencies:
 
@@ -72,11 +76,13 @@ Each notebook contains detailed explanations of the architecture, training proce
 | Baseline CNN           | 2,441,011    | Standard convolutional layers    |
 | p4m-Equivariant CNN    | 1,878,515    | Leverages p4m group symmetry     |
 
-### Observations
+### Performance Metrics
 
-- **p4m-equivariant model** achieves a **25% reduction in parameter space**.
-- Predictions demonstrate **better texture preservation** and **clearer lines**, especially on augmented datasets.
-- Augmentation with rotations and reflections enhances the performance of both models, with p4m-equivariance providing a significant edge.
+- **Baseline Model**: Slightly lower output quality with more parameters.
+- **p4m-Equivariant Model**:
+  - Achieved a **PSNR score of ~36**, highlighting improved output quality.
+  - **25% reduction in parameter space**.
+  - Demonstrated **better texture preservation** and **sharper lines**, especially on augmented datasets.
 
 ---
 
