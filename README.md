@@ -9,10 +9,7 @@ This repository contains the implementation of a study exploring the impact of *
   
 - **p4m Equivariance**: 
   - Integrated p4m group symmetry into the second model using the `e2cnn` library, significantly reducing parameter space while maintaining superior texture and line preservation.
-
-- **Augmented Training Dataset**:
-  - Expanded the training dataset by applying **4 90-degree rotations** and **mirror reflections**, increasing the dataset size by 8x.
-
+  
 - **Performance Comparison**:
   - **Baseline CNN (without p4m)**: 2,441,011 parameters.
   - **p4m-Equivariant CNN**: 1,878,515 parameters (~25% reduction).
@@ -23,7 +20,7 @@ This repository contains the implementation of a study exploring the impact of *
 ## Repository Structure
 
 ```plaintext
-.
+
 ├── sisr.ipynb               # Notebook for baseline CNN (without p4m equivariance)
 ├── sisr-p4m.ipynb           # Notebook for p4m-equivariant CNN
 ├── model.pth                # Trained model (baseline CNN)
@@ -74,6 +71,7 @@ Each notebook contains detailed explanations of the architecture, training proce
 
 ### Performance Metrics
 
+- Tested on an augmented testing set using 90-degree rotations and mirror reflections
 - **Baseline Model**: Slightly lower output quality with more parameters.
 - **p4m-Equivariant Model**:
   - Achieved a **PSNR score of ~36**, highlighting improved output quality.
